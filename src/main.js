@@ -1,4 +1,4 @@
-import { getImages } from './js/pixabay-api.js';
+import { getImages } from './pixabay-api.js';
 import {
   createGallery,
   clearGallery,
