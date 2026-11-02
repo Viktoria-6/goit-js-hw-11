@@ -1,4 +1,4 @@
-import { getImages } from './pixabay-api.js';
+import { getImagesBYquery } from './js/pixabay-api.js';
 import {
   createGallery,
   clearGallery,
@@ -28,7 +28,7 @@ form.addEventListener('submit', event => {
   clearGallery();
   showLoader();
 
-  getImages(query)
+  getImagesBYquery(query)
     .then(data => {
       if (!data.hits || data.hits.length === 0) {
         iziToast.error({
